@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --shell: #f8eee7;
+  --sand: #f4decb;
+  --apricot: #f5ccaa;
+  --eggplant: #49274a;
+  --grape: #94618e;
+  --black: #000;
+  --gray: #454545;
+
+  --canvas-size: min(80vh, 80vw);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  user-select: none;
+}
+
+body {
+  min-width: calc(100vw - 20px);
+  min-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--shell);
+}
+
+header {
+  min-width: min(80vh, 80vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background-color: var(--eggplant);
+  border: none;
+  border-radius: 3px;
+  padding: 0.2rem;
+  color: var(--shell);
+  cursor: pointer;
+  transition: all 0.05s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header button:active {
+  background-color: var(--grape);
+  transform: scale(0.98);
+}
+
+.canvas {
+  min-width: var(--canvas-size);
+  min-height: var(--canvas-size);
+  background-color: var(--sand);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cell {
+  outline: 1px solid var(--eggplant);
+}
