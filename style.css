@@ -39,14 +39,35 @@ header {
   align-items: center;
 }
 
-header button {
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header button,
+header p {
+  height: 2rem;
   background-color: var(--eggplant);
   border: none;
   border-radius: 3px;
-  padding: 0.2rem;
+  padding: 0.3rem;
+  margin-left: 0.6rem;
   color: var(--shell);
   cursor: pointer;
   transition: all 0.05s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header p {
+  cursor: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header p input {
+  margin-left: 0.3rem;
+  width: 3rem;
 }
 
 header button:active {

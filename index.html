@@ -11,7 +11,17 @@
   <body>
     <header>
       <h1>Etch-a-sketch</h1>
-      <button>Reset</button>
+      <div class="button-container">
+        <p>
+          Size
+          <input id="size" type="number" max="100" min="2" value="10" />
+        </p>
+        <p>
+          Color
+          <input id="color" type="color" value="#49274a" />
+        </p>
+        <button id="reset">Reset</button>
+      </div>
     </header>
     <div class="canvas" id="canvas"></div>
   </body>
