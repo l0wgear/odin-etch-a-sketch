@@ -50,7 +50,6 @@ window.addEventListener("mouseup", () => {
 
 colorInput.addEventListener("input", (e) => {
   color = e.target.value;
-  console.log(color);
 });
 
 sizeInput.addEventListener("input", (e) => {
